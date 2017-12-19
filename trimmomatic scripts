@@ -11,8 +11,7 @@
 
 #the M1-1 R1 and R2 jar files were copied and renamed practiceR1 and practice R2 and will be used in these examples 
 
-
-Examples: 
+#Schyler - one of the problems might be with the way the Illuminaclip command is specified.  I think we need to set the keepbothreads flag as true.
 java -jar trimmomatic-0.36.jar PE -phred33 practiceR1.fastq.gz practiceR2.fastq.gz sample1R1paired.fq.gz sample1R1unpaired.fq.gz sample1R2paired.fq.gz sample1R2unpaired.fq.gz ILLUMINACLIP:MRNAexpadapters_indexes.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:139
 
 java -jar trimmomatic-0.36.jar PE -phred33 practiceR1.fastq.gz practiceR2.fastq.gz  sample2R1paired.fq.gz sample2R1unpaired.fq.gz sample2R2paired.fq.gz sample2R2unpaired.fq.gz ILLUMINACLIP:MRNAexpadapters_indexes.fa:2:30:10 SLIDINGWINDOW:4:20 TRAILING:10 MINLEN:115
